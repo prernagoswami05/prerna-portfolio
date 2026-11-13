@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prerna Goswami — Student Portfolio</title>
+  <meta name="description" content="Personal portfolio of Prerna Goswami, a B.Tech Computer Science and Engineering student learning web development, UI/UX design, and software development." />
+  <meta property="og:title" content="Prerna Goswami — Student Portfolio" />
+  <meta property="og:description" content="Personal portfolio of Prerna Goswami, a B.Tech Computer Science and Engineering student learning web development, UI/UX design, and software development." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b0816'/><text x='50%25' y='66%25' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='44' fill='%23c4b5fd'>PG</text></svg>" />
+
+  <!-- Google Fonts: Outfit (Display), Plus Jakarta Sans (Body), JetBrains Mono (Code Accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Clean Dark Plum Atmospheric Backdrop -->
+  <div class="page-backdrop" aria-hidden="true"></div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="#hero" class="brand" aria-label="Prerna Goswami Home">
+        <span class="brand-mark" aria-hidden="true">PG</span>
+        <span class="brand-name">Prerna Goswami</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#approach" class="nav-link">Approach</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#learning" class="nav-link">Learning</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Primary Action + Mobile Menu Toggle -->
+      <div class="header-actions">
+        <a href="assets/Prerna Goswami Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm nav-resume-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" hidden>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#approach" class="mobile-link">Approach</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#practices" class="mobile-link">Practices</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#learning" class="mobile-link">Learning</a>
+      <a href="#beyond" class="mobile-link">Values</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="assets/Prerna Goswami Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline mobile-resume-btn">
+        View Resume
+      </a>
+      <a href="assets/Prerna Goswami Resume.pdf" download="Prerna Goswami Resume.pdf" class="btn btn-primary mobile-resume-btn">
+        Download Resume
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-role">
+            <span>B.Tech CSE &middot; </span>
+            <span class="typing-wrapper">
+              <span id="hero-typing">CSE Student</span><span class="typing-cursor" aria-hidden="true">|</span>
+            </span>
+          </p>
+          <h1 class="hero-headline">
+            Building Practical <span class="headline-accent">Web Applications.</span>
+          </h1>
+          <p class="hero-intro">
+            Hi, I&rsquo;m <strong>Prerna Goswami</strong> — a B.Tech Computer Science and Engineering student learning web development, UI/UX design, and backend fundamentals by building real projects.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="assets/Prerna Goswami Resume.pdf" download="Prerna Goswami Resume.pdf" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social Links">
+            <a href="https://github.com/prernagoswami05" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/prerna-goswami01/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="mailto:prernaagoswami@gmail.com" class="social-icon-btn" aria-label="Send Email to Prerna Goswami" title="Email">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-card" id="portrait-card">
+            <div class="portrait-ring">
+              <img
+                src="assets/profile.jpeg"
+                alt="Prerna Goswami, B.Tech Computer Science and Engineering student"
+                class="portrait-img"
+                id="profile-img"
+              />
+              <div class="portrait-fallback" id="profile-fallback" hidden>
+                <span class="fallback-initials">PG</span>
+                <span class="fallback-name">Prerna Goswami</span>
+              </div>
+            </div>
+            <div class="portrait-caption">
+              <span class="caption-name">Prerna Goswami</span>
+              <span class="caption-meta">B.Tech CSE &middot; Web &amp; UI/UX Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">01 &middot; About Me</span>
+          <h2 class="section-title">Learning by Building</h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-narrative glass-card reveal">
+            <p>
+              I am a <strong>B.Tech Computer Science and Engineering</strong> student learning web development and software engineering fundamentals. I enjoy taking an idea from rough layouts in Figma to a working website or web application.
+            </p>
+            <p>
+              Most of my hands-on practice revolves around <strong>HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB</strong>—connecting clear user interfaces to structured backend routes and databases.
+            </p>
+            <p>
+              Right now, I am focused on strengthening my JavaScript and Data Structures &amp; Algorithms fundamentals, improving my UI/UX layouts, and building practical student projects.
+            </p>
+          </div>
+
+          <div class="about-pillars">
+            <article class="pillar-card glass-card reveal">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Web Development</h3>
+                <p class="pillar-desc">Building responsive web pages and connecting frontend forms and views with Node.js, Express.js, and MongoDB.</p>
+              </div>
+            </article>
+
+            <article class="pillar-card glass-card reveal">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">UI/UX Design</h3>
+                <p class="pillar-desc">Designing clean layouts, readable typography, and user-friendly flows using Figma and CSS.</p>
+              </div>
+            </article>
+
+            <article class="pillar-card glass-card reveal">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Problem Solving</h3>
+                <p class="pillar-desc">Practicing programming logic, debugging step by step, and building my foundation in Data Structures and Algorithms.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Compact Sub-Section: What I Enjoy -->
+        <div class="enjoy-strip glass-card reveal">
+          <h3 class="highlight-title">What I Enjoy</h3>
+          <div class="enjoy-items">
+            <span>Web development</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>UI/UX design</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>Building practical projects</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>Exploring new technologies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW I APPROACH DEVELOPMENT SECTION ================= -->
+    <section id="approach" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">02 &middot; How I Approach Development</span>
+          <h2 class="section-title">My Development Workflow</h2>
+          <p class="section-subtitle">The step-by-step process I follow when planning, building, and testing my projects.</p>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="workflow-step glass-card reveal">
+            <span class="step-number">01</span>
+            <h3 class="step-title">Understand the Problem</h3>
+            <p class="step-desc">Understanding user requirements, identifying problems and planning solutions.</p>
+          </article>
+
+          <article class="workflow-step glass-card reveal">
+            <span class="step-number">02</span>
+            <h3 class="step-title">Plan &amp; Design</h3>
+            <p class="step-desc">Creating layouts, wireframes and user-friendly interfaces using design thinking.</p>
+          </article>
+
+          <article class="workflow-step glass-card reveal">
+            <span class="step-number">03</span>
+            <h3 class="step-title">Build &amp; Develop</h3>
+            <p class="step-desc">Implementing frontend interfaces, backend functionality, APIs and database connectivity.</p>
+          </article>
+
+          <article class="workflow-step glass-card reveal">
+            <span class="step-number">04</span>
+            <h3 class="step-title">Test &amp; Debug</h3>
+            <p class="step-desc">Finding errors, checking functionality, debugging and improving reliability.</p>
+          </article>
+
+          <article class="workflow-step glass-card reveal">
+            <span class="step-number">05</span>
+            <h3 class="step-title">Improve &amp; Deploy</h3>
+            <p class="step-desc">Improving responsiveness, usability, performance and learning deployment practices.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">03 &middot; Skills</span>
+          <h2 class="section-title">Technologies &amp; Tools I Use</h2>
+          <p class="section-subtitle">The core languages, backend tools, and design software I work with across my coursework and projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-title">HTML, CSS, JavaScript</h3>
+            <p class="skill-desc">Structuring web pages, styling responsive layouts, and adding interactive browser behavior.</p>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-title">Python</h3>
+            <p class="skill-desc">Writing clean scripts, practicing programming fundamentals, and solving logic problems.</p>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="skill-title">Node.js, Express.js</h3>
+            <p class="skill-desc">Creating basic server routes, handling requests, and connecting frontend pages to a backend.</p>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-title">MongoDB</h3>
+            <p class="skill-desc">Storing application data in collections and working with MongoDB Atlas in web projects.</p>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="6" y1="3" x2="6" y2="15"></line>
+                <circle cx="18" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M18 9a9 9 0 0 1-9 9"></path>
+              </svg>
+            </div>
+            <h3 class="skill-title">Git &amp; GitHub</h3>
+            <p class="skill-desc">Tracking code changes, managing repositories, and organizing project versions.</p>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-title">Figma (Intermediate)</h3>
+            <p class="skill-desc">Creating wireframes, interface mockups, and clean UI/UX layouts before coding.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENGINEERING PRACTICES SECTION ================= -->
+    <section id="practices" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">04 &middot; Engineering Practices</span>
+          <h2 class="section-title">Developing Habits &amp; Practices</h2>
+          <p class="section-subtitle">Core software development practices I apply and continue to strengthen while building projects.</p>
+        </div>
+
+        <div class="practices-grid">
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h3 class="practice-title">Problem Solving</h3>
+            <p class="practice-desc">Breaking problems into smaller steps and thinking through logic before coding.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="practice-title">Clean Code &amp; Code Readability</h3>
+            <p class="practice-desc">Using meaningful names, clear formatting, and simple file organization.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="practice-title">Responsive Web Design</h3>
+            <p class="practice-desc">Building layouts that adapt comfortably across desktop, tablet, and mobile screens.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+              </svg>
+            </div>
+            <h3 class="practice-title">UI/UX Design Thinking</h3>
+            <p class="practice-desc">Planning user flows and wireframes in Figma with clarity and usability in mind.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+            </div>
+            <h3 class="practice-title">API Integration</h3>
+            <p class="practice-desc">Connecting frontend views to backend routes and handling data requests and responses.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="practice-title">Database Management</h3>
+            <p class="practice-desc">Structuring collections and performing CRUD operations with MongoDB and Atlas.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="practice-title">Authentication &amp; Security Fundamentals</h3>
+            <p class="practice-desc">Learning session handling, basic input validation, and keeping user data separated.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="practice-title">Debugging &amp; Testing</h3>
+            <p class="practice-desc">Tracing errors in browser DevTools, checking API outputs, and testing user flows.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="6" y1="3" x2="6" y2="15"></line>
+                <circle cx="18" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M18 9a9 9 0 0 1-9 9"></path>
+              </svg>
+            </div>
+            <h3 class="practice-title">Git &amp; GitHub</h3>
+            <p class="practice-desc">Managing commits, tracking version history, and organizing project repositories.</p>
+          </article>
+
+          <article class="practice-card glass-card reveal">
+            <div class="practice-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <h3 class="practice-title">Basic Deployment Knowledge</h3>
+            <p class="practice-desc">Learning environment setup and hosting frontend and backend apps on Render.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECTS SECTION ================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">05 &middot; Featured Projects</span>
+          <h2 class="section-title">Practical Projects &amp; Case Studies</h2>
+          <p class="section-subtitle">Hands-on projects built to solve real problems—expand any case study to see my process, challenges, and lessons learned.</p>
+        </div>
+
+        <div class="project-filters reveal" role="tablist" aria-label="Filter featured projects">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Development</button>
+          <button type="button" class="filter-btn" data-filter="other" role="tab" aria-selected="false">Other Projects</button>
+        </div>
+
+        <p class="projects-empty" id="projects-empty" hidden>No standalone non-web projects listed right now — select All or Web Development to view all featured web applications.</p>
+
+        <div class="projects-stack">
+          <!-- Project 01 (Special Priority Showcase): SkillSync -->
+          <article class="project-card project-card-priority skillsync-showcase glass-card reveal" data-category="web">
+            <div class="ss-hero-split">
+              <div class="project-info ss-intro-col">
+                <div class="project-meta">
+                  <span>Project 01</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span class="meta-priority">Featured Flagship</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Full-Stack Web Application | EdTech</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span class="meta-live">Live on Render</span>
+                </div>
+
+                <h3 class="project-title ss-project-title">SkillSync</h3>
+                <p class="ss-tagline">&ldquo;Prepare Smarter. Track Progress. Get Placement Ready.&rdquo;</p>
+                <p class="project-desc">
+                  SkillSync is a placement preparation platform designed to help college students prepare for campus placements through assessments, performance analysis, preparation roadmaps, skill tracking and placement guidance.
+                </p>
+
+                <div class="ss-stack-groups" aria-label="SkillSync technology stack">
+                  <div class="ss-stack-row">
+                    <span class="ss-stack-label">Frontend</span>
+                    <div class="ss-stack-badges">
+                      <span class="ss-tech-badge">HTML5</span>
+                      <span class="ss-tech-badge">CSS3</span>
+                      <span class="ss-tech-badge">Vanilla JavaScript</span>
+                    </div>
+                  </div>
+                  <div class="ss-stack-row">
+                    <span class="ss-stack-label">Backend</span>
+                    <div class="ss-stack-badges">
+                      <span class="ss-tech-badge">Node.js</span>
+                      <span class="ss-tech-badge">Express.js</span>
+                      <span class="ss-tech-badge">REST APIs</span>
+                    </div>
+                  </div>
+                  <div class="ss-stack-row">
+                    <span class="ss-stack-label">Database</span>
+                    <div class="ss-stack-badges">
+                      <span class="ss-tech-badge">MongoDB Atlas</span>
+                      <span class="ss-tech-badge">MongoDB Node.js Driver</span>
+                    </div>
+                  </div>
+                  <div class="ss-stack-row">
+                    <span class="ss-stack-label">Auth</span>
+                    <div class="ss-stack-badges">
+                      <span class="ss-tech-badge">JWT</span>
+                      <span class="ss-tech-badge">bcryptjs</span>
+                    </div>
+                  </div>
+                  <div class="ss-stack-row">
+                    <span class="ss-stack-label">Payment</span>
+                    <div class="ss-stack-badges">
+                      <span class="ss-tech-badge">Razorpay (Test Mode)</span>
+                      <span class="ss-tech-badge">HMAC SHA-256</span>
+                      <span class="ss-tech-badge">Webhooks</span>
+                    </div>
+                  </div>
+                  <div class="ss-stack-row">
+                    <span class="ss-stack-label">Deployment</span>
+                    <div class="ss-stack-badges">
+                      <span class="ss-tech-badge">Render</span>
+                      <span class="ss-tech-badge">GitHub</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://skillsync-placement-preparation-system.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <span>View Live Project</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/prernagoswami05/SkillSync-Placement-Preparation-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>View Source Code</span>
+                  </a>
+                  <button type="button" class="btn btn-ghost btn-sm case-study-toggle" aria-expanded="false" aria-controls="case-skillsync">
+                    <span>View Case Study</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Interactive 11-Screen Screenshot Gallery -->
+              <div class="ss-gallery-col">
+                <div class="browser-frame ss-browser-frame">
+                  <div class="browser-bar ss-browser-bar">
+                    <div class="browser-dots" aria-hidden="true">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <span class="browser-url">skillsync-placement-preparation-system.onrender.com</span>
+                    <button type="button" class="ss-expand-btn" id="ss-gallery-expand" aria-label="Open SkillSync screenshot in full view">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" y1="3" x2="14" y2="10"></line>
+                        <line x1="3" y1="21" x2="10" y2="14"></line>
+                      </svg>
+                      <span>Full View</span>
+                    </button>
+                  </div>
+
+                  <div class="ss-stage-wrap">
+                    <button type="button" class="ss-stage-trigger" id="ss-stage-trigger" aria-label="Enlarge active SkillSync screenshot">
+                      <img src="assets/skillsync-dashboard.png" alt="SkillSync Student Dashboard showing tracked subjects and quick assessment launchers" id="ss-gallery-main" class="ss-stage-img" />
+                    </button>
+                    <div class="ss-stage-caption">
+                      <div class="ss-stage-caption-text">
+                        <span class="ss-stage-title" id="ss-gallery-title">Dashboard</span>
+                        <span class="ss-stage-subtitle" id="ss-gallery-subtitle">Central student workspace with subject readiness and quick assessment launchers</span>
+                      </div>
+                      <span class="ss-stage-counter" id="ss-gallery-counter">1 / 11</span>
+                    </div>
+                  </div>
+
+                  <div class="ss-thumbs" role="list" aria-label="SkillSync application screens">
+                    <button type="button" class="ss-thumb-btn active" data-ss-index="0" data-ss-src="assets/skillsync-dashboard.png" data-ss-title="Dashboard" data-ss-desc="Central student workspace with subject readiness and quick assessment launchers." aria-pressed="true">
+                      <img src="assets/skillsync-dashboard.png" alt="" loading="lazy" />
+                      <span>Dashboard</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="1" data-ss-src="assets/skillsync-assessment-engine.png" data-ss-title="Assessment Engine" data-ss-desc="Five practice modes including topic-wise drills, full placement mocks, and company patterns." aria-pressed="false">
+                      <img src="assets/skillsync-assessment-engine.png" alt="" loading="lazy" />
+                      <span>Assessment Engine</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="2" data-ss-src="assets/skillsync-placement-mentor.png" data-ss-title="Placement Mentor" data-ss-desc="Guided mentorship view for campus placement strategy and preparation support." aria-pressed="false">
+                      <img src="assets/skillsync-placement-mentor.png" alt="" loading="lazy" />
+                      <span>Placement Mentor</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="3" data-ss-src="assets/skillsync-roadmap.png" data-ss-title="Preparation Roadmap" data-ss-desc="Milestone curriculum organized by Beginner, Intermediate, and Advanced tracks." aria-pressed="false">
+                      <img src="assets/skillsync-roadmap.png" alt="" loading="lazy" />
+                      <span>Preparation Roadmap</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="4" data-ss-src="assets/skillsync-company-suggestions.png" data-ss-title="Company Suggestions" data-ss-desc="Company preparation suggestions aligned with role readiness and skill focus." aria-pressed="false">
+                      <img src="assets/skillsync-company-suggestions.png" alt="" loading="lazy" />
+                      <span>Company Suggestions</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="5" data-ss-src="assets/skillsync-placement-guide.png" data-ss-title="Placement Guide" data-ss-desc="Structured placement reference covering interview rounds and core preparation topics." aria-pressed="false">
+                      <img src="assets/skillsync-placement-guide.png" alt="" loading="lazy" />
+                      <span>Placement Guide</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="6" data-ss-src="assets/skillsync-assessment-interface.png" data-ss-title="Assessment Interface" data-ss-desc="Distraction-free timed test interface with question navigation and live timer." aria-pressed="false">
+                      <img src="assets/skillsync-assessment-interface.png" alt="" loading="lazy" />
+                      <span>Assessment Interface</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="7" data-ss-src="assets/skillsync-performance-report.png" data-ss-title="Performance Report" data-ss-desc="Diagnostic report breaking down strong vs. weak topics and question-level solutions." aria-pressed="false">
+                      <img src="assets/skillsync-performance-report.png" alt="" loading="lazy" />
+                      <span>Performance Report</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="8" data-ss-src="assets/skillsync-student-profile.png" data-ss-title="Student Profile" data-ss-desc="Student profile page displaying tracked skills, readiness tier, and membership status." aria-pressed="false">
+                      <img src="assets/skillsync-student-profile.png" alt="" loading="lazy" />
+                      <span>Student Profile</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="9" data-ss-src="assets/skillsync-student-login.png" data-ss-title="Student Login" data-ss-desc="Student portal authentication screen backed by JWT and bcryptjs." aria-pressed="false">
+                      <img src="assets/skillsync-student-login.png" alt="" loading="lazy" />
+                      <span>Student Login</span>
+                    </button>
+                    <button type="button" class="ss-thumb-btn" data-ss-index="10" data-ss-src="assets/skillsync-admin-login.png" data-ss-title="Admin Login" data-ss-desc="Role-restricted portal sign-in for authorized faculty and placement coordinators." aria-pressed="false">
+                      <img src="assets/skillsync-admin-login.png" alt="" loading="lazy" />
+                      <span>Admin Login</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actual Project Modules Grid -->
+            <div class="ss-section-block">
+              <div class="ss-block-header">
+                <span class="ss-block-kicker">Application Architecture</span>
+                <h4 class="ss-block-title">Actual Project Modules</h4>
+              </div>
+
+              <div class="ss-modules-grid">
+                <div class="ss-module-card">
+                  <span class="ss-module-num">01</span>
+                  <h5>Student Dashboard</h5>
+                  <p>Central workspace displaying readiness tier, tracked subjects, and quick assessment launchers.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">02</span>
+                  <h5>Assessment Engine</h5>
+                  <p>Supports topic-wise practice, full placement mocks, company patterns, debugging drills, and weak-area practice.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">03</span>
+                  <h5>Performance Reports</h5>
+                  <p>Diagnostic breakdown identifying strong and weak topics with question-by-question answer review.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">04</span>
+                  <h5>Assessment Attempt History</h5>
+                  <p>Chronological record of completed tests for tracking scores, timing, and topic consistency.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">05</span>
+                  <h5>Placement Mentor</h5>
+                  <p>Structured placement preparation guidance to help students plan interviews and daily focus.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">06</span>
+                  <h5>Preparation Roadmap</h5>
+                  <p>Step-by-step milestone curriculum across Beginner, Intermediate, and Advanced stages.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">07</span>
+                  <h5>Company Suggestions</h5>
+                  <p>Company-oriented preparation recommendations aligned with current readiness and technical focus.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">08</span>
+                  <h5>Placement Guide</h5>
+                  <p>Organized study reference covering core CS concepts, aptitude prep, and campus hiring rounds.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">09</span>
+                  <h5>Student Profile</h5>
+                  <p>Account overview managing target role, readiness level, tracked skills, and subscription state.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">10</span>
+                  <h5>Admin Dashboard</h5>
+                  <p>Dedicated coordinator workspace for overseeing student readiness, assessments, and platform records.</p>
+                </div>
+                <div class="ss-module-card">
+                  <span class="ss-module-num">11</span>
+                  <h5>Super Admin Functionality</h5>
+                  <p>Role-restricted administrative layer governing elevated permissions and system-level controls.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Special Technical Highlight: Razorpay Subscription Integration -->
+            <div class="ss-razorpay-highlight">
+              <div class="ss-razorpay-top">
+                <div>
+                  <span class="ss-block-kicker">Special Technical Highlight</span>
+                  <h4 class="ss-block-title">Razorpay Subscription Integration</h4>
+                </div>
+                <span class="ss-testmode-badge">Tested Successfully in Razorpay Test Mode</span>
+              </div>
+              <p class="ss-razorpay-summary">
+                Implemented a complete end-to-end subscription workflow using Razorpay&rsquo;s Test Mode environment with server-side signature verification and atomic database updates rather than client-only payment checks.
+              </p>
+              <div class="ss-razorpay-grid">
+                <div class="ss-razorpay-item">
+                  <span class="ss-rzp-dot" aria-hidden="true"></span>
+                  <span>Monthly and quarterly subscription plans</span>
+                </div>
+                <div class="ss-razorpay-item">
+                  <span class="ss-rzp-dot" aria-hidden="true"></span>
+                  <span>Razorpay Orders API and Checkout integration</span>
+                </div>
+                <div class="ss-razorpay-item">
+                  <span class="ss-rzp-dot" aria-hidden="true"></span>
+                  <span>Server-side payment verification endpoints</span>
+                </div>
+                <div class="ss-razorpay-item">
+                  <span class="ss-rzp-dot" aria-hidden="true"></span>
+                  <span>HMAC SHA-256 signature verification</span>
+                </div>
+                <div class="ss-razorpay-item">
+                  <span class="ss-rzp-dot" aria-hidden="true"></span>
+                  <span>Razorpay Webhook integration for payment events</span>
+                </div>
+                <div class="ss-razorpay-item">
+                  <span class="ss-rzp-dot" aria-hidden="true"></span>
+                  <span>MongoDB transaction-based subscription activation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Expandable Case Study: SkillSync -->
+            <div class="case-study-panel" id="case-skillsync" hidden>
+              <div class="case-study-header">
+                <div>
+                  <span class="ss-block-kicker">Project Case Study</span>
+                  <h4 class="case-study-heading">SkillSync — Architecture &amp; Implementation Overview</h4>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm case-study-back-btn" data-case-close="case-skillsync">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                  <span>Back to Projects</span>
+                </button>
+              </div>
+
+              <div class="case-study-grid">
+                <div class="case-block">
+                  <h4>Problem Statement</h4>
+                  <p>College students preparing for campus placements frequently rely on fragmented notes, disconnected quiz links, and unguided topic lists without clear diagnostic feedback or a single structured workflow.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Solution</h4>
+                  <p>Built SkillSync as a unified placement preparation platform that brings assessments, performance analysis, structured roadmaps, company suggestions, and placement guidance into one browser-based portal.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Application Modules</h4>
+                  <p>11 integrated modules: Student Dashboard, 5-mode Assessment Engine, Performance Reports, Assessment Attempt History, Placement Mentor, Preparation Roadmap, Company Suggestions, Placement Guide, Student Profile, Admin Dashboard, and Super Admin functionality.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Technology Stack</h4>
+                  <p>HTML5, CSS3, and Vanilla JavaScript for the responsive client interface; Node.js, Express.js, and REST APIs powering server-side routing and business logic.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Authentication</h4>
+                  <p>Role-separated Student, Admin, and Super Admin access secured with JSON Web Tokens (JWT) and bcryptjs password hashing.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Razorpay Integration</h4>
+                  <p>Monthly and quarterly subscription plans implemented with Razorpay Orders API, Checkout, server-side HMAC SHA-256 signature verification, Webhooks, and MongoDB transactions (tested in Razorpay Test Mode).</p>
+                </div>
+                <div class="case-block">
+                  <h4>Database</h4>
+                  <p>MongoDB Atlas connected via the native MongoDB Node.js Driver for storing student profiles, assessments, attempt histories, and transactional subscription records.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Deployment</h4>
+                  <p>Deployed live on Render with version-controlled source code hosted on GitHub.</p>
+                </div>
+              </div>
+
+              <div class="case-study-footer">
+                <button type="button" class="btn btn-outline btn-sm case-study-back-btn" data-case-close="case-skillsync">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                  </svg>
+                  <span>Back to Projects</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: LifeArchive -->
+          <article class="project-card project-card-reversed glass-card reveal" data-category="web">
+            <div class="project-info">
+              <div class="project-meta">
+                <span>Project 02</span>
+                <span aria-hidden="true">&middot;</span>
+                <span class="meta-live">Live on Render</span>
+              </div>
+              <h3 class="project-title">LifeArchive — Personal Memory-Keeping Web App</h3>
+              <p class="project-desc">
+                A journal-inspired personal memory-keeping web app where users can save, organize, search, and revisit personal notes with dates and locations. Built as an AI-assisted learning project to practice database connectivity, user sessions, and cloud deployment.
+              </p>
+
+              <p class="project-tech-line">
+                React.js &middot; Vite &middot; TypeScript &middot; Tailwind CSS &middot; Node.js &middot; Express.js &middot; MongoDB Atlas &middot; Render
+              </p>
+
+              <div class="project-actions">
+                <a href="https://lifearchive.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/prernagoswami05/lifearchive" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <button type="button" class="btn btn-ghost btn-sm case-study-toggle" aria-expanded="false" aria-controls="case-lifearchive">
+                  <span>View Case Study</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Interactive LifeArchive UI Preview -->
+            <div class="project-preview">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <div class="browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="browser-url">lifearchive.onrender.com</span>
+                </div>
+                <div class="browser-body la-preview">
+                  <div class="la-header">
+                    <span class="la-logo">LifeArchive</span>
+                    <div class="la-filter-tabs" role="tablist" aria-label="Filter LifeArchive preview memories">
+                      <button type="button" class="la-tab active" data-la-filter="all">All</button>
+                      <button type="button" class="la-tab" data-la-filter="travel">Travel</button>
+                      <button type="button" class="la-tab" data-la-filter="milestones">Milestones</button>
+                    </div>
+                  </div>
+                  <div class="la-cards-list" id="la-cards-list">
+                    <div class="la-entry" data-la-cat="travel">
+                      <div class="la-entry-meta">Campus Notes &middot; Travel</div>
+                      <div class="la-entry-title">College Tech Fest Evening</div>
+                      <p class="la-entry-copy">Saved photos and short notes from our first team presentation after workshops.</p>
+                    </div>
+                    <div class="la-entry" data-la-cat="milestones">
+                      <div class="la-entry-meta">Project Log &middot; Milestones</div>
+                      <div class="la-entry-title">First Live Express Deployment</div>
+                      <p class="la-entry-copy">Connected MongoDB Atlas storage with Express routes and user sessions on Render.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Expandable 7-Part Case Study: LifeArchive -->
+            <div class="case-study-panel" id="case-lifearchive" hidden>
+              <div class="case-study-grid">
+                <div class="case-block">
+                  <h4>Problem Statement</h4>
+                  <p>Photos and notes scattered across social feeds and phone folders make it hard to revisit meaningful personal memories with their full story and context.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Project Objective</h4>
+                  <p>Build a calm, private digital memory archive where users can record stories with dates, locations, and categories and search them anytime.</p>
+                </div>
+                <div class="case-block">
+                  <h4>My Contribution</h4>
+                  <p>Built as an AI-assisted project where I handled project integration, debugging, MongoDB Atlas database connectivity, authentication setup, and Render deployment.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Technology Stack</h4>
+                  <p>React.js, Vite, TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, Mongoose, and Render.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Key Features</h4>
+                  <p>Memory creation and editing, search by title, story text, or location, category filters, and user-isolated storage.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Development Challenges</h4>
+                  <p>Debugging database connection issues, configuring environment variables safely, and keeping user sessions consistent between frontend and backend deployments.</p>
+                </div>
+                <div class="case-block case-block-wide">
+                  <h4>What I Learned</h4>
+                  <p>How frontend views communicate with Express routes, how MongoDB Atlas stores user-specific documents, and how to troubleshoot live deployment issues.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: BiteVerse -->
+          <article class="project-card glass-card reveal" data-category="web">
+            <div class="project-info">
+              <div class="project-meta">
+                <span>Project 03</span>
+                <span aria-hidden="true">&middot;</span>
+                <span class="meta-live">Live on Render</span>
+              </div>
+              <h3 class="project-title">BiteVerse — Online Food Delivery Web Application</h3>
+              <p class="project-desc">
+                A browser-based food delivery web application built as a hands-on web development project. Users can explore restaurants, browse food menus loaded from MongoDB Atlas, add items to a cart, and go through checkout and order-history flows. Built with HTML, CSS, JavaScript, Node.js, and Express.js.
+              </p>
+
+              <p class="project-tech-line">
+                HTML &middot; CSS &middot; JavaScript &middot; Node.js &middot; Express.js &middot; MongoDB Atlas &middot; Render
+              </p>
+
+              <div class="project-actions">
+                <a href="https://biteverse-og7z.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/prernagoswami05/BiteVerse" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="GitHub repository is currently private">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub (Private)</span>
+                </a>
+                <button type="button" class="btn btn-ghost btn-sm case-study-toggle" aria-expanded="false" aria-controls="case-biteverse">
+                  <span>View Case Study</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Interactive BiteVerse UI Preview -->
+            <div class="project-preview">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <div class="browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="browser-url">biteverse-og7z.onrender.com</span>
+                </div>
+                <div class="browser-body bv-preview">
+                  <div class="bv-header">
+                    <span class="bv-logo">BiteVerse</span>
+                    <div class="bv-cart-summary" id="bv-cart-summary">
+                      Cart: <span id="bv-cart-count">0</span> items
+                    </div>
+                  </div>
+                  <div class="bv-menu-list">
+                    <div class="bv-dish-row">
+                      <div>
+                        <div class="bv-dish-name">Margherita Pizza</div>
+                        <div class="bv-dish-sub">Loaded from MongoDB menu collection</div>
+                      </div>
+                      <button type="button" class="bv-add-btn" data-dish="Margherita Pizza">+ Add</button>
+                    </div>
+                    <div class="bv-dish-row">
+                      <div>
+                        <div class="bv-dish-name">Paneer Tikka Roll</div>
+                        <div class="bv-dish-sub">Quick snacks &middot; Cart state demo</div>
+                      </div>
+                      <button type="button" class="bv-add-btn" data-dish="Paneer Tikka Roll">+ Add</button>
+                    </div>
+                    <div class="bv-dish-row">
+                      <div>
+                        <div class="bv-dish-name">Classic Masala Dosa</div>
+                        <div class="bv-dish-sub">South Indian &middot; Checkout flow</div>
+                      </div>
+                      <button type="button" class="bv-add-btn" data-dish="Classic Masala Dosa">+ Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Expandable 7-Part Case Study: BiteVerse -->
+            <div class="case-study-panel" id="case-biteverse" hidden>
+              <div class="case-study-grid">
+                <div class="case-block">
+                  <h4>Problem Statement</h4>
+                  <p>Understanding how real food-ordering platforms connect dynamic menu data, cart updates, and checkout flows without relying on heavy frontend frameworks.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Project Objective</h4>
+                  <p>Build an end-to-end browser-based food delivery app using plain HTML, CSS, and JavaScript connected to a Node.js, Express.js, and MongoDB Atlas backend.</p>
+                </div>
+                <div class="case-block">
+                  <h4>My Contribution</h4>
+                  <p>Built the responsive frontend interfaces, cart and checkout interactions in vanilla JavaScript, backend API routes, MongoDB Atlas menu fetching, and Render deployment.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Technology Stack</h4>
+                  <p>HTML, CSS, Vanilla JavaScript, Node.js, Express.js, MongoDB Atlas, and Render.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Key Features</h4>
+                  <p>Restaurant and menu browsing from MongoDB Atlas, interactive shopping cart, checkout flow, and order-history view.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Development Challenges</h4>
+                  <p>Managing cart state updates cleanly in plain JavaScript, handling CORS between separately hosted frontend and backend services, and testing API responses.</p>
+                </div>
+                <div class="case-block case-block-wide">
+                  <h4>What I Learned</h4>
+                  <p>How frontend fetch calls interact with Express endpoints, how to debug cross-origin requests, and what security improvements (like password hashing and persistent order storage) to build next.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CURRENTLY LEARNING SECTION ================= -->
+    <section id="learning" class="section section-compact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">06 &middot; Currently Learning</span>
+          <h2 class="section-title">Continuous Learning Journey</h2>
+          <p class="section-subtitle">Skills and concepts I am actively practicing and building on right now.</p>
+        </div>
+
+        <div class="learning-grid">
+          <div class="learning-item glass-card reveal">
+            <span class="learning-marker" aria-hidden="true">01</span>
+            <span>Strengthening JavaScript fundamentals</span>
+          </div>
+          <div class="learning-item glass-card reveal">
+            <span class="learning-marker" aria-hidden="true">02</span>
+            <span>Improving Data Structures &amp; Algorithms</span>
+          </div>
+          <div class="learning-item glass-card reveal">
+            <span class="learning-marker" aria-hidden="true">03</span>
+            <span>Learning React.js</span>
+          </div>
+          <div class="learning-item glass-card reveal">
+            <span class="learning-marker" aria-hidden="true">04</span>
+            <span>Understanding backend development</span>
+          </div>
+          <div class="learning-item glass-card reveal">
+            <span class="learning-marker" aria-hidden="true">05</span>
+            <span>Improving database concepts</span>
+          </div>
+          <div class="learning-item glass-card reveal">
+            <span class="learning-marker" aria-hidden="true">06</span>
+            <span>Strengthening software engineering fundamentals</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BEYOND THE CODE SECTION ================= -->
+    <section id="beyond" class="section section-compact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">07 &middot; Beyond the Code</span>
+          <h2 class="section-title">Values That Guide My Work</h2>
+          <p class="section-subtitle">The mindset I bring to learning, collaborating, and turning ideas into working software.</p>
+        </div>
+
+        <div class="values-grid">
+          <article class="value-card glass-card reveal">
+            <h3 class="value-title">Continuous Learning</h3>
+            <p class="value-desc">Staying curious, asking questions, and steadily improving one concept at a time.</p>
+          </article>
+          <article class="value-card glass-card reveal">
+            <h3 class="value-title">Problem-Solving Mindset</h3>
+            <p class="value-desc">Approaching bugs and challenges patiently by breaking them down logically.</p>
+          </article>
+          <article class="value-card glass-card reveal">
+            <h3 class="value-title">Attention to Detail</h3>
+            <p class="value-desc">Caring about spacing, alignment, readable code, and small usability touches.</p>
+          </article>
+          <article class="value-card glass-card reveal">
+            <h3 class="value-title">User-Centered Thinking</h3>
+            <p class="value-desc">Designing screens and flows from the perspective of the person using the app.</p>
+          </article>
+          <article class="value-card glass-card reveal">
+            <h3 class="value-title">Practical Implementation</h3>
+            <p class="value-desc">Turning classroom theory into real, working web projects I can test and improve.</p>
+          </article>
+          <article class="value-card glass-card reveal">
+            <h3 class="value-title">Curiosity and Experimentation</h3>
+            <p class="value-desc">Exploring new tools, layouts, and ideas through hands-on experimentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION SECTION ================= -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">08 &middot; Education &amp; Certificates</span>
+          <h2 class="section-title">Academic Foundation</h2>
+        </div>
+
+        <article class="education-card glass-card reveal">
+          <div class="edu-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-top">
+              <h3 class="edu-degree">B.Tech Computer Science and Engineering</h3>
+              <span class="edu-grad">Expected Graduation: June 2027</span>
+            </div>
+            <p class="edu-coursework">
+              Relevant Coursework: Data Structures &amp; Algorithms &middot; Database Management Systems &middot; Operating Systems &middot; Computer Networks &middot; Object-Oriented Programming
+            </p>
+          </div>
+        </article>
+
+        <!-- Certifications -->
+        <div class="certificates-block reveal">
+          <h3 class="certificates-heading">Certifications</h3>
+          <div class="certificates-grid">
+            <!-- 1. GoAtCode, Mohali -->
+            <article class="cert-card glass-card">
+              <a
+                href="assets/45-days-training.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-preview-link"
+                aria-label="View GoAtCode Mohali Web Development Internship Training Certificate PDF in a new tab"
+              >
+                <img
+                  src="assets/45-days-training-preview.png"
+                  alt="GoAtCode Mohali Web Development Internship Training Certificate preview"
+                  class="cert-preview-img"
+                />
+                <span class="cert-thumb-overlay">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Open PDF</span>
+                </span>
+              </a>
+
+              <div class="cert-card-body">
+                <span class="cert-org">GoAtCode, Mohali</span>
+                <h4 class="cert-title">Web Development Internship Training</h4>
+                <p class="cert-details">55 Days &middot; 11 June 2026 – 5 August 2026</p>
+                <p class="cert-subdetail">Role: Web Development Intern</p>
+
+                <div class="cert-actions">
+                  <a
+                    href="assets/45-days-training.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <span>View Certificate</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2. Tutedude -->
+            <article class="cert-card glass-card">
+              <a
+                href="assets/tutedude-uiux-certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-preview-link"
+                aria-label="View Tutedude UI/UX Design Hackathon Certificate of Participation PDF in a new tab"
+              >
+                <img
+                  src="assets/tutedude-uiux-preview.png"
+                  alt="Tutedude UI/UX Design Hackathon Certificate of Participation preview"
+                  class="cert-preview-img"
+                />
+                <span class="cert-thumb-overlay">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Open PDF</span>
+                </span>
+              </a>
+
+              <div class="cert-card-body">
+                <span class="cert-org">Tutedude</span>
+                <h4 class="cert-title">UI/UX Design Hackathon</h4>
+                <p class="cert-details">Certificate of Participation &middot; Date: September 2026</p>
+                <p class="cert-subdetail">Certificate ID: TD-PRER-UXH-1165</p>
+
+                <div class="cert-actions">
+                  <a
+                    href="assets/tutedude-uiux-certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <span>View Certificate</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3. CodeWithHarry -->
+            <article class="cert-card glass-card">
+              <a
+                href="assets/codewithharry-web-development-certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-preview-link"
+                aria-label="View CodeWithHarry Ultimate Web Development Course Certificate PDF in a new tab"
+              >
+                <img
+                  src="assets/codewithharry-web-development-preview.png"
+                  alt="CodeWithHarry Ultimate Web Development Course 2026 Certificate preview"
+                  class="cert-preview-img"
+                />
+                <span class="cert-thumb-overlay">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Open PDF</span>
+                </span>
+              </a>
+
+              <div class="cert-card-body">
+                <span class="cert-org">CodeWithHarry</span>
+                <h4 class="cert-title">Ultimate Web Development Course 2026 – Build Modern Websites</h4>
+                <p class="cert-details">Course Completion &middot; Issued: 14 November 2026</p>
+                <p class="cert-subdetail">Certificate ID: CWH-THE-ULTIMATE-WEB-DEV-COURSE-EI4HUQ5W</p>
+
+                <div class="cert-actions">
+                  <a
+                    href="assets/codewithharry-web-development-certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <span>View Certificate</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">09 &middot; Contact</span>
+          <h2 class="section-title">Let’s Connect</h2>
+          <p class="section-subtitle">Open to learning opportunities, internships, and connecting with fellow developers.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-channels reveal">
+            <div class="contact-card glass-card">
+              <span class="channel-label">Email</span>
+              <a href="mailto:prernaagoswami@gmail.com" class="channel-value">prernaagoswami@gmail.com</a>
+              <div class="channel-actions">
+                <button type="button" class="btn btn-outline btn-sm" id="copy-email-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span id="copy-email-text">Copy Email</span>
+                </button>
+                <a href="mailto:prernaagoswami@gmail.com" class="btn btn-primary btn-sm">
+                  <span>Send Email</span>
+                </a>
+              </div>
+            </div>
+
+            <a href="https://www.linkedin.com/in/prerna-goswami01/" target="_blank" rel="noopener noreferrer" class="contact-link-card glass-card">
+              <div class="contact-link-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="channel-label">LinkedIn</span>
+                <span class="channel-sub">linkedin.com/in/prerna-goswami01</span>
+              </div>
+              <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+
+            <a href="https://github.com/prernagoswami05" target="_blank" rel="noopener noreferrer" class="contact-link-card glass-card">
+              <div class="contact-link-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="channel-label">GitHub</span>
+                <span class="channel-sub">github.com/prernagoswami05</span>
+              </div>
+              <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <form class="contact-form glass-card reveal" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="contact-name" class="form-label">Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <label for="contact-email" class="form-label">Email</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="you@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Internship / Collaboration / Inquiry" />
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" rows="4" class="form-input form-textarea" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-tagline">Building. Learning. Growing.</span>
+          <span class="footer-subtagline">One project at a time.</span>
+        </div>
+
+        <div class="footer-socials" aria-label="Footer social links">
+          <a href="https://github.com/prernagoswami05" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/prerna-goswami01/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:prernaagoswami@gmail.com" class="footer-social-link" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; <span id="footer-year">2026</span> Prerna Goswami &middot; Made with curiosity &amp; creativity.</span>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#approach">Approach</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copy Email Success Notification Toast -->
+  <div class="copy-toast" id="copy-toast" role="status" aria-live="polite" hidden>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>Email copied to clipboard!</span>
+  </div>
+
+  <!-- Floating Back-to-Top Button -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- SkillSync Screenshot Lightbox Modal -->
+  <div class="modal-backdrop" id="ss-lightbox" role="dialog" aria-modal="true" aria-labelledby="ss-lightbox-title" hidden>
+    <div class="ss-lightbox-panel glass-card">
+      <div class="ss-lightbox-header">
+        <div class="ss-lightbox-heading">
+          <span class="ss-lightbox-kicker">SkillSync &middot; Live Application Screen</span>
+          <h3 class="ss-lightbox-title" id="ss-lightbox-title">Dashboard</h3>
+        </div>
+        <div class="ss-lightbox-controls">
+          <span class="ss-lightbox-counter" id="ss-lightbox-counter">1 / 11</span>
+          <button type="button" class="ss-lightbox-nav" id="ss-lightbox-prev" aria-label="Previous screenshot">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button type="button" class="ss-lightbox-nav" id="ss-lightbox-next" aria-label="Next screenshot">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <button type="button" class="modal-close ss-lightbox-close" id="ss-lightbox-close" aria-label="Close screenshot preview">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="ss-lightbox-stage">
+        <img src="assets/skillsync-dashboard.png" alt="SkillSync screen enlarged preview" id="ss-lightbox-img" class="ss-lightbox-img" />
+      </div>
+
+      <p class="ss-lightbox-desc" id="ss-lightbox-desc">Central student workspace with subject readiness and quick assessment launchers.</p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
